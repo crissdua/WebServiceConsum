@@ -1,0 +1,419 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+OASP_C
+</name>
+</assembly>
+<members>
+<member name="T:OASP_C.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:OASP_C.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:OASP_C.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:OASP_C.WSDL_BODEGAS.StandardFaultMessage">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.StandardFaultMessage.standard">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.StandardFaultMessage.addition">
+<comentarios/>
+</member>
+<member name="T:OASP_C.WSDL_BODEGAS.ExchangeFaultData">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.ExchangeFaultData.faultText">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.ExchangeFaultData.faultUrl">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.ExchangeFaultData.faultDetail">
+<comentarios/>
+</member>
+<member name="T:OASP_C.WSDL_BODEGAS.ExchangeLogData">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.ExchangeLogData.severity">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.ExchangeLogData.text">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.ExchangeLogData.url">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.ExchangeLogData.id">
+<comentarios/>
+</member>
+<member name="T:OASP_C.WSDL_BODEGAS.StandardFaultMessageExtension">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.StandardFaultMessageExtension.Log">
+<comentarios/>
+</member>
+<member name="T:OASP_C.WSDL_BODEGAS.Log">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.Log.BusinessDocumentProcessingResultCode">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.Log.MaximumLogItemSeverityCode">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.Log.Item">
+<comentarios/>
+</member>
+<member name="T:OASP_C.WSDL_BODEGAS.LogItem">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.LogItem.TypeID">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.LogItem.CategoryCode">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.LogItem.SeverityCode">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.LogItem.ReferenceObjectNodeSenderTechnicalID">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.LogItem.ReferenceMessageElementName">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.LogItem.Note">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.LogItem.NoteTemplateText">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.LogItem.LogItemNotePlaceholderSubstitutionList">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.LogItem.WebURI">
+<comentarios/>
+</member>
+<member name="T:OASP_C.WSDL_BODEGAS.LogItemCategoryCode">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.LogItemCategoryCode.listID">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.LogItemCategoryCode.listVersionID">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.LogItemCategoryCode.listAgencyID">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.LogItemCategoryCode.listAgencySchemeID">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.LogItemCategoryCode.listAgencySchemeAgencyID">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.LogItemCategoryCode.listAgencySchemeAgencyIDSpecified">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.LogItemCategoryCode.Value">
+<comentarios/>
+</member>
+<member name="T:OASP_C.WSDL_BODEGAS.AgencyIdentificationCode">
+<comentarios/>
+</member>
+<member name="F:OASP_C.WSDL_BODEGAS.AgencyIdentificationCode.Item1">
+<comentarios/>
+</member>
+<member name="F:OASP_C.WSDL_BODEGAS.AgencyIdentificationCode.Item5">
+<comentarios/>
+</member>
+<member name="F:OASP_C.WSDL_BODEGAS.AgencyIdentificationCode.Item6">
+<comentarios/>
+</member>
+<member name="F:OASP_C.WSDL_BODEGAS.AgencyIdentificationCode.Item16">
+<comentarios/>
+</member>
+<member name="F:OASP_C.WSDL_BODEGAS.AgencyIdentificationCode.Item17">
+<comentarios/>
+</member>
+<member name="F:OASP_C.WSDL_BODEGAS.AgencyIdentificationCode.Item84">
+<comentarios/>
+</member>
+<member name="F:OASP_C.WSDL_BODEGAS.AgencyIdentificationCode.Item107">
+<comentarios/>
+</member>
+<member name="F:OASP_C.WSDL_BODEGAS.AgencyIdentificationCode.Item109">
+<comentarios/>
+</member>
+<member name="F:OASP_C.WSDL_BODEGAS.AgencyIdentificationCode.Item112">
+<comentarios/>
+</member>
+<member name="F:OASP_C.WSDL_BODEGAS.AgencyIdentificationCode.Item113">
+<comentarios/>
+</member>
+<member name="F:OASP_C.WSDL_BODEGAS.AgencyIdentificationCode.Item114">
+<comentarios/>
+</member>
+<member name="F:OASP_C.WSDL_BODEGAS.AgencyIdentificationCode.Item116">
+<comentarios/>
+</member>
+<member name="F:OASP_C.WSDL_BODEGAS.AgencyIdentificationCode.Item117">
+<comentarios/>
+</member>
+<member name="F:OASP_C.WSDL_BODEGAS.AgencyIdentificationCode.Item124">
+<comentarios/>
+</member>
+<member name="F:OASP_C.WSDL_BODEGAS.AgencyIdentificationCode.Item130">
+<comentarios/>
+</member>
+<member name="F:OASP_C.WSDL_BODEGAS.AgencyIdentificationCode.Item131">
+<comentarios/>
+</member>
+<member name="F:OASP_C.WSDL_BODEGAS.AgencyIdentificationCode.Item138">
+<comentarios/>
+</member>
+<member name="F:OASP_C.WSDL_BODEGAS.AgencyIdentificationCode.Item142">
+<comentarios/>
+</member>
+<member name="F:OASP_C.WSDL_BODEGAS.AgencyIdentificationCode.Item146">
+<comentarios/>
+</member>
+<member name="F:OASP_C.WSDL_BODEGAS.AgencyIdentificationCode.Item262">
+<comentarios/>
+</member>
+<member name="F:OASP_C.WSDL_BODEGAS.AgencyIdentificationCode.Item296">
+<comentarios/>
+</member>
+<member name="F:OASP_C.WSDL_BODEGAS.AgencyIdentificationCode.Item310">
+<comentarios/>
+</member>
+<member name="T:OASP_C.WSDL_BODEGAS.LogItemNotePlaceholderSubstitutionList">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.LogItemNotePlaceholderSubstitutionList.FirstPlaceholderID">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.LogItemNotePlaceholderSubstitutionList.SecondPlaceholderID">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.LogItemNotePlaceholderSubstitutionList.ThirdPlaceholderID">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.LogItemNotePlaceholderSubstitutionList.FourthPlaceholderID">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.LogItemNotePlaceholderSubstitutionList.FirstPlaceholderSubstitutionText">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.LogItemNotePlaceholderSubstitutionList.SecondPlaceholderSubstitutionText">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.LogItemNotePlaceholderSubstitutionList.ThirdPlaceholderSubstitutionText">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.LogItemNotePlaceholderSubstitutionList.FourthPlaceholderSubstitutionText">
+<comentarios/>
+</member>
+<member name="T:OASP_C.WSDL_BODEGAS.IF_BodegaCreateConfirmation">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.IF_BodegaCreateConfirmation.SAP_UUID">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.IF_BodegaCreateConfirmation.CodAlmacen">
+<comentarios/>
+</member>
+<member name="T:OASP_C.WSDL_BODEGAS.IF_BodegaCreateConfirmationMessage_sync">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.IF_BodegaCreateConfirmationMessage_sync.IF_Bodega">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.IF_BodegaCreateConfirmationMessage_sync.Log">
+<comentarios/>
+</member>
+<member name="T:OASP_C.WSDL_BODEGAS.Quantity">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.Quantity.unitCode">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.Quantity.Value">
+<comentarios/>
+</member>
+<member name="T:OASP_C.WSDL_BODEGAS.Text">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.Text.languageCode">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.Text.Value">
+<comentarios/>
+</member>
+<member name="T:OASP_C.WSDL_BODEGAS.IF_BodegaCreateRequest">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.IF_BodegaCreateRequest.CodAlmacen">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.IF_BodegaCreateRequest.Nalmacen">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.IF_BodegaCreateRequest.Citem">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.IF_BodegaCreateRequest.Ditem">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.IF_BodegaCreateRequest.CantDisp">
+<comentarios/>
+</member>
+<member name="T:OASP_C.WSDL_BODEGAS.UUID">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.UUID.schemeID">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.UUID.schemeAgencyID">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.UUID.Value">
+<comentarios/>
+</member>
+<member name="T:OASP_C.WSDL_BODEGAS.BusinessDocumentMessageID">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.BusinessDocumentMessageID.schemeID">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.BusinessDocumentMessageID.schemeAgencyID">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.BusinessDocumentMessageID.schemeAgencySchemeAgencyID">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.BusinessDocumentMessageID.schemeAgencySchemeAgencyIDSpecified">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.BusinessDocumentMessageID.Value">
+<comentarios/>
+</member>
+<member name="T:OASP_C.WSDL_BODEGAS.BusinessDocumentBasicMessageHeader">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.BusinessDocumentBasicMessageHeader.ID">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.BusinessDocumentBasicMessageHeader.UUID">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.BusinessDocumentBasicMessageHeader.ReferenceID">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.BusinessDocumentBasicMessageHeader.ReferenceUUID">
+<comentarios/>
+</member>
+<member name="T:OASP_C.WSDL_BODEGAS.IF_BodegaCreateRequestMessage_sync">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.IF_BodegaCreateRequestMessage_sync.BasicMessageHeader">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.IF_BodegaCreateRequestMessage_sync.IF_Bodega">
+<comentarios/>
+</member>
+<member name="T:OASP_C.WSDL_BODEGAS.IF_BodegaUpdateRequestMessage_sync">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.IF_BodegaUpdateRequestMessage_sync.BasicMessageHeader">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.IF_BodegaUpdateRequestMessage_sync.IF_Bodega">
+<comentarios/>
+</member>
+<member name="T:OASP_C.WSDL_BODEGAS.IF_BodegaUpdateRequest">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.IF_BodegaUpdateRequest.SAP_UUID">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.IF_BodegaUpdateRequest.CodAlmacen">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.IF_BodegaUpdateRequest.Nalmacen">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.IF_BodegaUpdateRequest.Citem">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.IF_BodegaUpdateRequest.Ditem">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.IF_BodegaUpdateRequest.CantDisp">
+<comentarios/>
+</member>
+<member name="T:OASP_C.WSDL_BODEGAS.IF_BodegaUpdateConfirmationMessage_sync">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.IF_BodegaUpdateConfirmationMessage_sync.Log">
+<comentarios/>
+</member>
+<member name="T:OASP_C.WSDL_BODEGAS.IF_BodegaReadByIDQueryMessage_sync">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.IF_BodegaReadByIDQueryMessage_sync.IF_Bodega">
+<comentarios/>
+</member>
+<member name="T:OASP_C.WSDL_BODEGAS.IF_BodegaReadByIDQuery">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.IF_BodegaReadByIDQuery.SAP_UUID">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.IF_BodegaReadByIDQuery.CodAlmacen">
+<comentarios/>
+</member>
+<member name="T:OASP_C.WSDL_BODEGAS.IF_BodegaReadByIDResponseMessage_sync">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.IF_BodegaReadByIDResponseMessage_sync.IF_Bodega">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.IF_BodegaReadByIDResponseMessage_sync.Log">
+<comentarios/>
+</member>
+<member name="T:OASP_C.WSDL_BODEGAS.IF_BodegaReadByIDResponse">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.IF_BodegaReadByIDResponse.SAP_UUID">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.IF_BodegaReadByIDResponse.CodAlmacen">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.IF_BodegaReadByIDResponse.Nalmacen">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.IF_BodegaReadByIDResponse.Citem">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.IF_BodegaReadByIDResponse.Ditem">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.IF_BodegaReadByIDResponse.CantDisp">
+<comentarios/>
+</member>
+</members>
+</doc>

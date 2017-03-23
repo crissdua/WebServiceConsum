@@ -1,0 +1,11 @@
+c:\users\criss\documents\visual studio 2015\Projects\OASP_C\OASP_C\bin\Debug\OASP_C.exe.config
+c:\users\criss\documents\visual studio 2015\Projects\OASP_C\OASP_C\bin\Debug\OASP_C.exe
+c:\users\criss\documents\visual studio 2015\Projects\OASP_C\OASP_C\bin\Debug\OASP_C.pdb
+c:\users\criss\documents\visual studio 2015\Projects\OASP_C\OASP_C\bin\Debug\OASP_C.xml
+c:\users\criss\documents\visual studio 2015\Projects\OASP_C\OASP_C\obj\Debug\OASP_C.Form1.resources
+c:\users\criss\documents\visual studio 2015\Projects\OASP_C\OASP_C\obj\Debug\OASP_C.Resources.resources
+c:\users\criss\documents\visual studio 2015\Projects\OASP_C\OASP_C\obj\Debug\OASP_C.vbproj.GenerateResource.Cache
+c:\users\criss\documents\visual studio 2015\Projects\OASP_C\OASP_C\obj\Debug\OASP_C.exe
+c:\users\criss\documents\visual studio 2015\Projects\OASP_C\OASP_C\obj\Debug\OASP_C.xml
+c:\users\criss\documents\visual studio 2015\Projects\OASP_C\OASP_C\obj\Debug\OASP_C.pdb
+c:\users\criss\documents\visual studio 2015\Projects\OASP_C\OASP_C\obj\Debug\OASP_C.vbprojResolveAssemblyReference.cache
