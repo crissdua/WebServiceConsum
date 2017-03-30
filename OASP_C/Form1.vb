@@ -1,8 +1,13 @@
-﻿Public Class Form1
+﻿Imports OASP_C.ExBodegaService
+Imports System.Net
+Imports System.Net.Security
+Imports System.Security.Cryptography.X509Certificates
+
+
+Public Class Form1
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Try
             Dim objetoLeer As New WSDL_BODEGAS.ReadResponse
-            objetoLeer.IF_BodegaReadByIDResponse_sync = New WSDL_BODEGAS.IF_BodegaReadByIDResponseMessage_sync
             Dim cliente As New WSDL_BODEGAS.Y640YVQUY_WBodegaClient
             cliente.ClientCredentials.UserName.UserName = "_BODEGAS"
             cliente.ClientCredentials.UserName.Password = "Welcome08"
@@ -27,7 +32,6 @@
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Try
             Dim objetoEscribir As New WSDL_BODEGAS.CreateResponse
-            objetoEscribir.IF_BodegaCreateConfirmation_sync = New WSDL_BODEGAS.IF_BodegaCreateConfirmationMessage_sync
             Dim cliente As New WSDL_BODEGAS.Y640YVQUY_WBodegaClient
             cliente.ClientCredentials.UserName.UserName = "_BODEGAS"
             cliente.ClientCredentials.UserName.Password = "Welcome08"
@@ -55,7 +59,6 @@
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         Dim objetoActualizar As New WSDL_BODEGAS.UpdateResponse
-        objetoActualizar.IF_BodegaUpdateConfirmation_sync = New WSDL_BODEGAS.IF_BodegaUpdateConfirmationMessage_sync
         Dim cliente As New WSDL_BODEGAS.Y640YVQUY_WBodegaClient
         cliente.ClientCredentials.UserName.UserName = "_BODEGAS"
         cliente.ClientCredentials.UserName.Password = "Welcome08"
@@ -79,4 +82,27 @@
         MessageBox.Show("Actualizo Correctamente")
         cliente.Close()
     End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        Dim request As W.GetBodegaType = New W.GetBodegaType
+        'request.ToString()
+        Dim response As W.GetBodegaResponseType = New W.GetBodegaResponseType
+
+        Try
+            Dim cliente As W.ipostep_vP0010000101in_WCSX_comsapb1ivplatformruntime_INB_WS_CALL_SYNC_XPT_INB_WS_CALL_SYNC_XPTipo_procClient =
+            New W.ipostep_vP0010000101in_WCSX_comsapb1ivplatformruntime_INB_WS_CALL_SYNC_XPT_INB_WS_CALL_SYNC_XPTipo_procClient
+
+            cliente.ClientCredentials.UserName.UserName = "B1iruntime"
+            cliente.ClientCredentials.UserName.Password = "12345678"
+
+            response = cliente.ZGetBodega(request)
+            Dim row As W.GetBodegaResponseTypeRow = response.GetBodegaResult.GetValue(1)
+            DataGridView1.Rows.Add(New String() {row.WhsCode, row.WhsName, row.itemcode, row.Dscription, row.OnHand})
+
+            MessageBox.Show("ajafdjaslj")
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub
+
 End Class

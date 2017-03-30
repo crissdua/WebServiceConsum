@@ -415,5 +415,32 @@ OASP_C
 <member name="P:OASP_C.WSDL_BODEGAS.IF_BodegaReadByIDResponse.CantDisp">
 <comentarios/>
 </member>
+<member name="T:OASP_C.W.GetBodegaType">
+<comentarios/>
+</member>
+<member name="T:OASP_C.W.GetBodegaResponseType">
+<comentarios/>
+</member>
+<member name="P:OASP_C.W.GetBodegaResponseType.GetBodegaResult">
+<comentarios/>
+</member>
+<member name="T:OASP_C.W.GetBodegaResponseTypeRow">
+<comentarios/>
+</member>
+<member name="P:OASP_C.W.GetBodegaResponseTypeRow.WhsCode">
+<comentarios/>
+</member>
+<member name="P:OASP_C.W.GetBodegaResponseTypeRow.WhsName">
+<comentarios/>
+</member>
+<member name="P:OASP_C.W.GetBodegaResponseTypeRow.itemcode">
+<comentarios/>
+</member>
+<member name="P:OASP_C.W.GetBodegaResponseTypeRow.Dscription">
+<comentarios/>
+</member>
+<member name="P:OASP_C.W.GetBodegaResponseTypeRow.OnHand">
+<comentarios/>
+</member>
 </members>
 </doc>

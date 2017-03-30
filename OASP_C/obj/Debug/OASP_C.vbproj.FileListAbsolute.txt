@@ -9,3 +9,14 @@ c:\users\criss\documents\visual studio 2015\Projects\OASP_C\OASP_C\obj\Debug\OAS
 c:\users\criss\documents\visual studio 2015\Projects\OASP_C\OASP_C\obj\Debug\OASP_C.xml
 c:\users\criss\documents\visual studio 2015\Projects\OASP_C\OASP_C\obj\Debug\OASP_C.pdb
 c:\users\criss\documents\visual studio 2015\Projects\OASP_C\OASP_C\obj\Debug\OASP_C.vbprojResolveAssemblyReference.cache
+C:\Users\criss\Desktop\WebServiceConsum\OASP_C\bin\Debug\OASP_C.exe.config
+C:\Users\criss\Desktop\WebServiceConsum\OASP_C\bin\Debug\OASP_C.exe
+C:\Users\criss\Desktop\WebServiceConsum\OASP_C\bin\Debug\OASP_C.pdb
+C:\Users\criss\Desktop\WebServiceConsum\OASP_C\bin\Debug\OASP_C.xml
+C:\Users\criss\Desktop\WebServiceConsum\OASP_C\obj\Debug\OASP_C.Form1.resources
+C:\Users\criss\Desktop\WebServiceConsum\OASP_C\obj\Debug\OASP_C.Resources.resources
+C:\Users\criss\Desktop\WebServiceConsum\OASP_C\obj\Debug\OASP_C.vbproj.GenerateResource.Cache
+C:\Users\criss\Desktop\WebServiceConsum\OASP_C\obj\Debug\OASP_C.exe
+C:\Users\criss\Desktop\WebServiceConsum\OASP_C\obj\Debug\OASP_C.xml
+C:\Users\criss\Desktop\WebServiceConsum\OASP_C\obj\Debug\OASP_C.pdb
+C:\Users\criss\Desktop\WebServiceConsum\OASP_C\obj\Debug\OASP_C.vbprojResolveAssemblyReference.cache
