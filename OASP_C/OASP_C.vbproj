@@ -150,17 +150,17 @@
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\WSDL_BODEGAS\finalfinalbodega.wsdl" />
+    <None Include="Service References\WSDL_BODEGAS\nuevoC4C.wsdl" />
     <None Include="Service References\WSDL_BODEGAS\OASP_C.WSDL_BODEGAS.CreateResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\WSDL_BODEGAS\OASP_C.WSDL_BODEGAS.IF_BodegaCreateConfirmationMessage_sync.datasource">
+    <None Include="Service References\WSDL_BODEGAS\OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaCreateConfirmationMessage_sync.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\WSDL_BODEGAS\OASP_C.WSDL_BODEGAS.IF_BodegaReadByIDResponseMessage_sync.datasource">
+    <None Include="Service References\WSDL_BODEGAS\OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaReadByIDResponseMessage_sync.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\WSDL_BODEGAS\OASP_C.WSDL_BODEGAS.IF_BodegaUpdateConfirmationMessage_sync.datasource">
+    <None Include="Service References\WSDL_BODEGAS\OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaUpdateConfirmationMessage_sync.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\WSDL_BODEGAS\OASP_C.WSDL_BODEGAS.ReadResponse.datasource">
@@ -180,18 +180,6 @@
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\WSDL_BODEGAS\" />
     <WCFMetadataStorage Include="Service References\W\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\WSDL_BODEGAS\configuration91.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\WSDL_BODEGAS\configuration.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\WSDL_BODEGAS\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.vb</LastGenOutput>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <WebReferences Include="Web References\" />
@@ -219,6 +207,18 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WSDL_BODEGAS\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WSDL_BODEGAS\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WSDL_BODEGAS\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

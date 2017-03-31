@@ -1,0 +1,12 @@
+_BODEGAS
+Welcome08
+
+
+C4C
+se crea la comunicacion con la dir de repositorio
+se crea el escenario y se descarga el wdsl
+
+VB
+Crear Escenario.. 
+llamada interna.. a servicio de referencia 
+llamada externa.. a wdsl que se descarga de C4C

@@ -1,0 +1,18 @@
+SELECT 
+	W1.WhsCode, 
+	W1.WhsName, 
+	T0.itemcode,
+	T0.Dscription, 
+	T2.OnHand
+FROM 
+	OINM T0
+    INNER JOIN OITM T1 ON T0.ItemCode = T1.ItemCode
+    INNER JOIN OITW T2 ON T1.ItemCode = T2.ItemCode
+    INNER JOIN OWHS W1 ON T2.WhsCode = W1.WhsCode
+Group by 
+	T1.itemcode, 
+	T0.Itemcode, 
+	T0.Dscription, 
+	W1.WhsCode, 
+	W1.WhsName, 
+	T2.OnHand

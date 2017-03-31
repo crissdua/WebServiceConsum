@@ -793,13 +793,13 @@ Namespace WSDL_BODEGAS
      System.Diagnostics.DebuggerStepThroughAttribute(),  _
      System.ComponentModel.DesignerCategoryAttribute("code"),  _
      System.Xml.Serialization.XmlTypeAttribute([Namespace]:="http://0014438665-one-off.sap.com/Y640YVQUY_")>  _
-    Partial Public Class IF_BodegaCreateConfirmation
+    Partial Public Class EX_BodegaExistencia_BodegaCreateConfirmation
         Inherits Object
         Implements System.ComponentModel.INotifyPropertyChanged
         
         Private sAP_UUIDField As String
         
-        Private codAlmacenField As String
+        Private idField As String
         
         '''<comentarios/>
         <System.Xml.Serialization.XmlElementAttribute(Form:=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType:="token", Order:=0)>  _
@@ -815,13 +815,13 @@ Namespace WSDL_BODEGAS
         
         '''<comentarios/>
         <System.Xml.Serialization.XmlElementAttribute(Form:=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType:="token", Order:=1)>  _
-        Public Property CodAlmacen() As String
+        Public Property Id() As String
             Get
-                Return Me.codAlmacenField
+                Return Me.idField
             End Get
             Set
-                Me.codAlmacenField = value
-                Me.RaisePropertyChanged("CodAlmacen")
+                Me.idField = value
+                Me.RaisePropertyChanged("Id")
             End Set
         End Property
         
@@ -841,23 +841,23 @@ Namespace WSDL_BODEGAS
      System.Diagnostics.DebuggerStepThroughAttribute(),  _
      System.ComponentModel.DesignerCategoryAttribute("code"),  _
      System.Xml.Serialization.XmlTypeAttribute([Namespace]:="http://0014438665-one-off.sap.com/Y640YVQUY_")>  _
-    Partial Public Class IF_BodegaCreateConfirmationMessage_sync
+    Partial Public Class EX_BodegaExistencia_BodegaCreateConfirmationMessage_sync
         Inherits Object
         Implements System.ComponentModel.INotifyPropertyChanged
         
-        Private iF_BodegaField As IF_BodegaCreateConfirmation
+        Private eX_BodegaField As EX_BodegaExistencia_BodegaCreateConfirmation
         
         Private logField As Log
         
         '''<comentarios/>
         <System.Xml.Serialization.XmlElementAttribute(Form:=System.Xml.Schema.XmlSchemaForm.Unqualified, Order:=0)>  _
-        Public Property IF_Bodega() As IF_BodegaCreateConfirmation
+        Public Property EX_Bodega() As EX_BodegaExistencia_BodegaCreateConfirmation
             Get
-                Return Me.iF_BodegaField
+                Return Me.eX_BodegaField
             End Get
             Set
-                Me.iF_BodegaField = value
-                Me.RaisePropertyChanged("IF_Bodega")
+                Me.eX_BodegaField = value
+                Me.RaisePropertyChanged("EX_Bodega")
             End Set
         End Property
         
@@ -985,11 +985,13 @@ Namespace WSDL_BODEGAS
      System.Diagnostics.DebuggerStepThroughAttribute(),  _
      System.ComponentModel.DesignerCategoryAttribute("code"),  _
      System.Xml.Serialization.XmlTypeAttribute([Namespace]:="http://0014438665-one-off.sap.com/Y640YVQUY_")>  _
-    Partial Public Class IF_BodegaCreateRequest
+    Partial Public Class EX_BodegaExistencia_BodegaCreateRequest
         Inherits Object
         Implements System.ComponentModel.INotifyPropertyChanged
         
-        Private codAlmacenField As String
+        Private idField As String
+        
+        Private codAlmacenField As Text
         
         Private nalmacenField As Text
         
@@ -1001,7 +1003,19 @@ Namespace WSDL_BODEGAS
         
         '''<comentarios/>
         <System.Xml.Serialization.XmlElementAttribute(Form:=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType:="token", Order:=0)>  _
-        Public Property CodAlmacen() As String
+        Public Property Id() As String
+            Get
+                Return Me.idField
+            End Get
+            Set
+                Me.idField = value
+                Me.RaisePropertyChanged("Id")
+            End Set
+        End Property
+        
+        '''<comentarios/>
+        <System.Xml.Serialization.XmlElementAttribute(Form:=System.Xml.Schema.XmlSchemaForm.Unqualified, Order:=1)>  _
+        Public Property CodAlmacen() As Text
             Get
                 Return Me.codAlmacenField
             End Get
@@ -1012,7 +1026,7 @@ Namespace WSDL_BODEGAS
         End Property
         
         '''<comentarios/>
-        <System.Xml.Serialization.XmlElementAttribute(Form:=System.Xml.Schema.XmlSchemaForm.Unqualified, Order:=1)>  _
+        <System.Xml.Serialization.XmlElementAttribute(Form:=System.Xml.Schema.XmlSchemaForm.Unqualified, Order:=2)>  _
         Public Property Nalmacen() As Text
             Get
                 Return Me.nalmacenField
@@ -1024,7 +1038,7 @@ Namespace WSDL_BODEGAS
         End Property
         
         '''<comentarios/>
-        <System.Xml.Serialization.XmlElementAttribute(Form:=System.Xml.Schema.XmlSchemaForm.Unqualified, Order:=2)>  _
+        <System.Xml.Serialization.XmlElementAttribute(Form:=System.Xml.Schema.XmlSchemaForm.Unqualified, Order:=3)>  _
         Public Property Citem() As Text
             Get
                 Return Me.citemField
@@ -1036,7 +1050,7 @@ Namespace WSDL_BODEGAS
         End Property
         
         '''<comentarios/>
-        <System.Xml.Serialization.XmlElementAttribute(Form:=System.Xml.Schema.XmlSchemaForm.Unqualified, Order:=3)>  _
+        <System.Xml.Serialization.XmlElementAttribute(Form:=System.Xml.Schema.XmlSchemaForm.Unqualified, Order:=4)>  _
         Public Property Ditem() As Text
             Get
                 Return Me.ditemField
@@ -1048,7 +1062,7 @@ Namespace WSDL_BODEGAS
         End Property
         
         '''<comentarios/>
-        <System.Xml.Serialization.XmlElementAttribute(Form:=System.Xml.Schema.XmlSchemaForm.Unqualified, Order:=4)>  _
+        <System.Xml.Serialization.XmlElementAttribute(Form:=System.Xml.Schema.XmlSchemaForm.Unqualified, Order:=5)>  _
         Public Property CantDisp() As Quantity
             Get
                 Return Me.cantDispField
@@ -1303,13 +1317,13 @@ Namespace WSDL_BODEGAS
      System.Diagnostics.DebuggerStepThroughAttribute(),  _
      System.ComponentModel.DesignerCategoryAttribute("code"),  _
      System.Xml.Serialization.XmlTypeAttribute([Namespace]:="http://0014438665-one-off.sap.com/Y640YVQUY_")>  _
-    Partial Public Class IF_BodegaCreateRequestMessage_sync
+    Partial Public Class EX_BodegaExistencia_BodegaCreateRequestMessage_sync
         Inherits Object
         Implements System.ComponentModel.INotifyPropertyChanged
         
         Private basicMessageHeaderField As BusinessDocumentBasicMessageHeader
         
-        Private iF_BodegaField As IF_BodegaCreateRequest
+        Private eX_BodegaField As EX_BodegaExistencia_BodegaCreateRequest
         
         '''<comentarios/>
         <System.Xml.Serialization.XmlElementAttribute(Form:=System.Xml.Schema.XmlSchemaForm.Unqualified, Order:=0)>  _
@@ -1325,13 +1339,13 @@ Namespace WSDL_BODEGAS
         
         '''<comentarios/>
         <System.Xml.Serialization.XmlElementAttribute(Form:=System.Xml.Schema.XmlSchemaForm.Unqualified, Order:=1)>  _
-        Public Property IF_Bodega() As IF_BodegaCreateRequest
+        Public Property EX_Bodega() As EX_BodegaExistencia_BodegaCreateRequest
             Get
-                Return Me.iF_BodegaField
+                Return Me.eX_BodegaField
             End Get
             Set
-                Me.iF_BodegaField = value
-                Me.RaisePropertyChanged("IF_Bodega")
+                Me.eX_BodegaField = value
+                Me.RaisePropertyChanged("EX_Bodega")
             End Set
         End Property
         
@@ -1346,34 +1360,40 @@ Namespace WSDL_BODEGAS
     End Class
     
     <System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0"),  _
-     System.ServiceModel.ServiceContractAttribute([Namespace]:="http://0014438665-one-off.sap.com/Y640YVQUY_", ConfigurationName:="WSDL_BODEGAS.Y640YVQUY_WBodega")>  _
-    Friend Interface Y640YVQUY_WBodega
+     System.ServiceModel.ServiceContractAttribute([Namespace]:="http://0014438665-one-off.sap.com/Y640YVQUY_", ConfigurationName:="WSDL_BODEGAS.Y640YVQUY_WSDL_BODEGAS")>  _
+    Public Interface Y640YVQUY_WSDL_BODEGAS
         
         'CODEGEN: Se está generando un contrato de mensaje, ya que la operación Create no es RPC ni está encapsulada en un documento.
-        <System.ServiceModel.OperationContractAttribute(Action:="http://0014438665-one-off.sap.com/Y640YVQUY_/Y640YVQUY_WBodega/CreateRequest", ReplyAction:="*"),  _
-         System.ServiceModel.FaultContractAttribute(GetType(WSDL_BODEGAS.StandardFaultMessage), Action:="http://0014438665-one-off.sap.com/Y640YVQUY_/Y640YVQUY_WBodega/CreateRequest", Name:="StandardFaultMessage", [Namespace]:="http://sap.com/xi/AP/Common/Global"),  _
+        <System.ServiceModel.OperationContractAttribute(Action:="http://0014438665-one-off.sap.com/Y640YVQUY_/Y640YVQUY_WSDL_BODEGAS/CreateRequest"& _ 
+            "", ReplyAction:="*"),  _
+         System.ServiceModel.FaultContractAttribute(GetType(WSDL_BODEGAS.StandardFaultMessage), Action:="http://0014438665-one-off.sap.com/Y640YVQUY_/Y640YVQUY_WSDL_BODEGAS/CreateRequest"& _ 
+            "", Name:="StandardFaultMessage", [Namespace]:="http://sap.com/xi/AP/Common/Global"),  _
          System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
         Function Create(ByVal request As WSDL_BODEGAS.CreateRequest) As WSDL_BODEGAS.CreateResponse
         
-        <System.ServiceModel.OperationContractAttribute(Action:="http://0014438665-one-off.sap.com/Y640YVQUY_/Y640YVQUY_WBodega/CreateRequest", ReplyAction:="*")>  _
+        <System.ServiceModel.OperationContractAttribute(Action:="http://0014438665-one-off.sap.com/Y640YVQUY_/Y640YVQUY_WSDL_BODEGAS/CreateRequest"& _ 
+            "", ReplyAction:="*")>  _
         Function CreateAsync(ByVal request As WSDL_BODEGAS.CreateRequest) As System.Threading.Tasks.Task(Of WSDL_BODEGAS.CreateResponse)
         
         'CODEGEN: Se está generando un contrato de mensaje, ya que la operación Update no es RPC ni está encapsulada en un documento.
-        <System.ServiceModel.OperationContractAttribute(Action:="http://0014438665-one-off.sap.com/Y640YVQUY_/Y640YVQUY_WBodega/UpdateRequest", ReplyAction:="*"),  _
-         System.ServiceModel.FaultContractAttribute(GetType(WSDL_BODEGAS.StandardFaultMessage), Action:="http://0014438665-one-off.sap.com/Y640YVQUY_/Y640YVQUY_WBodega/UpdateRequest", Name:="StandardFaultMessage", [Namespace]:="http://sap.com/xi/AP/Common/Global"),  _
+        <System.ServiceModel.OperationContractAttribute(Action:="http://0014438665-one-off.sap.com/Y640YVQUY_/Y640YVQUY_WSDL_BODEGAS/UpdateRequest"& _ 
+            "", ReplyAction:="*"),  _
+         System.ServiceModel.FaultContractAttribute(GetType(WSDL_BODEGAS.StandardFaultMessage), Action:="http://0014438665-one-off.sap.com/Y640YVQUY_/Y640YVQUY_WSDL_BODEGAS/UpdateRequest"& _ 
+            "", Name:="StandardFaultMessage", [Namespace]:="http://sap.com/xi/AP/Common/Global"),  _
          System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
         Function Update(ByVal request As WSDL_BODEGAS.UpdateRequest) As WSDL_BODEGAS.UpdateResponse
         
-        <System.ServiceModel.OperationContractAttribute(Action:="http://0014438665-one-off.sap.com/Y640YVQUY_/Y640YVQUY_WBodega/UpdateRequest", ReplyAction:="*")>  _
+        <System.ServiceModel.OperationContractAttribute(Action:="http://0014438665-one-off.sap.com/Y640YVQUY_/Y640YVQUY_WSDL_BODEGAS/UpdateRequest"& _ 
+            "", ReplyAction:="*")>  _
         Function UpdateAsync(ByVal request As WSDL_BODEGAS.UpdateRequest) As System.Threading.Tasks.Task(Of WSDL_BODEGAS.UpdateResponse)
         
         'CODEGEN: Se está generando un contrato de mensaje, ya que la operación Read no es RPC ni está encapsulada en un documento.
-        <System.ServiceModel.OperationContractAttribute(Action:="http://0014438665-one-off.sap.com/Y640YVQUY_/Y640YVQUY_WBodega/ReadRequest", ReplyAction:="*"),  _
-         System.ServiceModel.FaultContractAttribute(GetType(WSDL_BODEGAS.StandardFaultMessage), Action:="http://0014438665-one-off.sap.com/Y640YVQUY_/Y640YVQUY_WBodega/ReadRequest", Name:="StandardFaultMessage", [Namespace]:="http://sap.com/xi/AP/Common/Global"),  _
+        <System.ServiceModel.OperationContractAttribute(Action:="http://0014438665-one-off.sap.com/Y640YVQUY_/Y640YVQUY_WSDL_BODEGAS/ReadRequest", ReplyAction:="*"),  _
+         System.ServiceModel.FaultContractAttribute(GetType(WSDL_BODEGAS.StandardFaultMessage), Action:="http://0014438665-one-off.sap.com/Y640YVQUY_/Y640YVQUY_WSDL_BODEGAS/ReadRequest", Name:="StandardFaultMessage", [Namespace]:="http://sap.com/xi/AP/Common/Global"),  _
          System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
         Function Read(ByVal request As WSDL_BODEGAS.ReadRequest) As WSDL_BODEGAS.ReadResponse
         
-        <System.ServiceModel.OperationContractAttribute(Action:="http://0014438665-one-off.sap.com/Y640YVQUY_/Y640YVQUY_WBodega/ReadRequest", ReplyAction:="*")>  _
+        <System.ServiceModel.OperationContractAttribute(Action:="http://0014438665-one-off.sap.com/Y640YVQUY_/Y640YVQUY_WSDL_BODEGAS/ReadRequest", ReplyAction:="*")>  _
         Function ReadAsync(ByVal request As WSDL_BODEGAS.ReadRequest) As System.Threading.Tasks.Task(Of WSDL_BODEGAS.ReadResponse)
     End Interface
     
@@ -1381,18 +1401,18 @@ Namespace WSDL_BODEGAS
      System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0"),  _
      System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced),  _
      System.ServiceModel.MessageContractAttribute(IsWrapped:=false)>  _
-    Partial Friend Class CreateRequest
+    Partial Public Class CreateRequest
         
         <System.ServiceModel.MessageBodyMemberAttribute([Namespace]:="http://sap.com/xi/SAPGlobal20/Global", Order:=0)>  _
-        Public IF_BodegaCreateRequest_sync As WSDL_BODEGAS.IF_BodegaCreateRequestMessage_sync
+        Public EX_BodegaExistencia_BodegaCreateRequest_sync As WSDL_BODEGAS.EX_BodegaExistencia_BodegaCreateRequestMessage_sync
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal IF_BodegaCreateRequest_sync As WSDL_BODEGAS.IF_BodegaCreateRequestMessage_sync)
+        Public Sub New(ByVal EX_BodegaExistencia_BodegaCreateRequest_sync As WSDL_BODEGAS.EX_BodegaExistencia_BodegaCreateRequestMessage_sync)
             MyBase.New
-            Me.IF_BodegaCreateRequest_sync = IF_BodegaCreateRequest_sync
+            Me.EX_BodegaExistencia_BodegaCreateRequest_sync = EX_BodegaExistencia_BodegaCreateRequest_sync
         End Sub
     End Class
     
@@ -1400,18 +1420,18 @@ Namespace WSDL_BODEGAS
      System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0"),  _
      System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced),  _
      System.ServiceModel.MessageContractAttribute(IsWrapped:=false)>  _
-    Partial Friend Class CreateResponse
+    Partial Public Class CreateResponse
         
         <System.ServiceModel.MessageBodyMemberAttribute([Namespace]:="http://sap.com/xi/SAPGlobal20/Global", Order:=0)>  _
-        Public IF_BodegaCreateConfirmation_sync As WSDL_BODEGAS.IF_BodegaCreateConfirmationMessage_sync
+        Public EX_BodegaExistencia_BodegaCreateConfirmation_sync As WSDL_BODEGAS.EX_BodegaExistencia_BodegaCreateConfirmationMessage_sync
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal IF_BodegaCreateConfirmation_sync As WSDL_BODEGAS.IF_BodegaCreateConfirmationMessage_sync)
+        Public Sub New(ByVal EX_BodegaExistencia_BodegaCreateConfirmation_sync As WSDL_BODEGAS.EX_BodegaExistencia_BodegaCreateConfirmationMessage_sync)
             MyBase.New
-            Me.IF_BodegaCreateConfirmation_sync = IF_BodegaCreateConfirmation_sync
+            Me.EX_BodegaExistencia_BodegaCreateConfirmation_sync = EX_BodegaExistencia_BodegaCreateConfirmation_sync
         End Sub
     End Class
     
@@ -1421,13 +1441,13 @@ Namespace WSDL_BODEGAS
      System.Diagnostics.DebuggerStepThroughAttribute(),  _
      System.ComponentModel.DesignerCategoryAttribute("code"),  _
      System.Xml.Serialization.XmlTypeAttribute([Namespace]:="http://0014438665-one-off.sap.com/Y640YVQUY_")>  _
-    Partial Public Class IF_BodegaUpdateRequestMessage_sync
+    Partial Public Class EX_BodegaExistencia_BodegaUpdateRequestMessage_sync
         Inherits Object
         Implements System.ComponentModel.INotifyPropertyChanged
         
         Private basicMessageHeaderField As BusinessDocumentBasicMessageHeader
         
-        Private iF_BodegaField As IF_BodegaUpdateRequest
+        Private eX_BodegaField As EX_BodegaExistencia_BodegaUpdateRequest
         
         '''<comentarios/>
         <System.Xml.Serialization.XmlElementAttribute(Form:=System.Xml.Schema.XmlSchemaForm.Unqualified, Order:=0)>  _
@@ -1443,13 +1463,13 @@ Namespace WSDL_BODEGAS
         
         '''<comentarios/>
         <System.Xml.Serialization.XmlElementAttribute(Form:=System.Xml.Schema.XmlSchemaForm.Unqualified, Order:=1)>  _
-        Public Property IF_Bodega() As IF_BodegaUpdateRequest
+        Public Property EX_Bodega() As EX_BodegaExistencia_BodegaUpdateRequest
             Get
-                Return Me.iF_BodegaField
+                Return Me.eX_BodegaField
             End Get
             Set
-                Me.iF_BodegaField = value
-                Me.RaisePropertyChanged("IF_Bodega")
+                Me.eX_BodegaField = value
+                Me.RaisePropertyChanged("EX_Bodega")
             End Set
         End Property
         
@@ -1469,13 +1489,15 @@ Namespace WSDL_BODEGAS
      System.Diagnostics.DebuggerStepThroughAttribute(),  _
      System.ComponentModel.DesignerCategoryAttribute("code"),  _
      System.Xml.Serialization.XmlTypeAttribute([Namespace]:="http://0014438665-one-off.sap.com/Y640YVQUY_")>  _
-    Partial Public Class IF_BodegaUpdateRequest
+    Partial Public Class EX_BodegaExistencia_BodegaUpdateRequest
         Inherits Object
         Implements System.ComponentModel.INotifyPropertyChanged
         
         Private sAP_UUIDField As String
         
-        Private codAlmacenField As String
+        Private idField As String
+        
+        Private codAlmacenField As Text
         
         Private nalmacenField As Text
         
@@ -1499,7 +1521,19 @@ Namespace WSDL_BODEGAS
         
         '''<comentarios/>
         <System.Xml.Serialization.XmlElementAttribute(Form:=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType:="token", Order:=1)>  _
-        Public Property CodAlmacen() As String
+        Public Property Id() As String
+            Get
+                Return Me.idField
+            End Get
+            Set
+                Me.idField = value
+                Me.RaisePropertyChanged("Id")
+            End Set
+        End Property
+        
+        '''<comentarios/>
+        <System.Xml.Serialization.XmlElementAttribute(Form:=System.Xml.Schema.XmlSchemaForm.Unqualified, Order:=2)>  _
+        Public Property CodAlmacen() As Text
             Get
                 Return Me.codAlmacenField
             End Get
@@ -1510,7 +1544,7 @@ Namespace WSDL_BODEGAS
         End Property
         
         '''<comentarios/>
-        <System.Xml.Serialization.XmlElementAttribute(Form:=System.Xml.Schema.XmlSchemaForm.Unqualified, Order:=2)>  _
+        <System.Xml.Serialization.XmlElementAttribute(Form:=System.Xml.Schema.XmlSchemaForm.Unqualified, Order:=3)>  _
         Public Property Nalmacen() As Text
             Get
                 Return Me.nalmacenField
@@ -1522,7 +1556,7 @@ Namespace WSDL_BODEGAS
         End Property
         
         '''<comentarios/>
-        <System.Xml.Serialization.XmlElementAttribute(Form:=System.Xml.Schema.XmlSchemaForm.Unqualified, Order:=3)>  _
+        <System.Xml.Serialization.XmlElementAttribute(Form:=System.Xml.Schema.XmlSchemaForm.Unqualified, Order:=4)>  _
         Public Property Citem() As Text
             Get
                 Return Me.citemField
@@ -1534,7 +1568,7 @@ Namespace WSDL_BODEGAS
         End Property
         
         '''<comentarios/>
-        <System.Xml.Serialization.XmlElementAttribute(Form:=System.Xml.Schema.XmlSchemaForm.Unqualified, Order:=4)>  _
+        <System.Xml.Serialization.XmlElementAttribute(Form:=System.Xml.Schema.XmlSchemaForm.Unqualified, Order:=5)>  _
         Public Property Ditem() As Text
             Get
                 Return Me.ditemField
@@ -1546,7 +1580,7 @@ Namespace WSDL_BODEGAS
         End Property
         
         '''<comentarios/>
-        <System.Xml.Serialization.XmlElementAttribute(Form:=System.Xml.Schema.XmlSchemaForm.Unqualified, Order:=5)>  _
+        <System.Xml.Serialization.XmlElementAttribute(Form:=System.Xml.Schema.XmlSchemaForm.Unqualified, Order:=6)>  _
         Public Property CantDisp() As Quantity
             Get
                 Return Me.cantDispField
@@ -1573,7 +1607,7 @@ Namespace WSDL_BODEGAS
      System.Diagnostics.DebuggerStepThroughAttribute(),  _
      System.ComponentModel.DesignerCategoryAttribute("code"),  _
      System.Xml.Serialization.XmlTypeAttribute([Namespace]:="http://0014438665-one-off.sap.com/Y640YVQUY_")>  _
-    Partial Public Class IF_BodegaUpdateConfirmationMessage_sync
+    Partial Public Class EX_BodegaExistencia_BodegaUpdateConfirmationMessage_sync
         Inherits Object
         Implements System.ComponentModel.INotifyPropertyChanged
         
@@ -1605,18 +1639,18 @@ Namespace WSDL_BODEGAS
      System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0"),  _
      System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced),  _
      System.ServiceModel.MessageContractAttribute(IsWrapped:=false)>  _
-    Partial Friend Class UpdateRequest
+    Partial Public Class UpdateRequest
         
         <System.ServiceModel.MessageBodyMemberAttribute([Namespace]:="http://sap.com/xi/SAPGlobal20/Global", Order:=0)>  _
-        Public IF_BodegaUpdateRequest_sync As WSDL_BODEGAS.IF_BodegaUpdateRequestMessage_sync
+        Public EX_BodegaExistencia_BodegaUpdateRequest_sync As WSDL_BODEGAS.EX_BodegaExistencia_BodegaUpdateRequestMessage_sync
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal IF_BodegaUpdateRequest_sync As WSDL_BODEGAS.IF_BodegaUpdateRequestMessage_sync)
+        Public Sub New(ByVal EX_BodegaExistencia_BodegaUpdateRequest_sync As WSDL_BODEGAS.EX_BodegaExistencia_BodegaUpdateRequestMessage_sync)
             MyBase.New
-            Me.IF_BodegaUpdateRequest_sync = IF_BodegaUpdateRequest_sync
+            Me.EX_BodegaExistencia_BodegaUpdateRequest_sync = EX_BodegaExistencia_BodegaUpdateRequest_sync
         End Sub
     End Class
     
@@ -1624,18 +1658,18 @@ Namespace WSDL_BODEGAS
      System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0"),  _
      System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced),  _
      System.ServiceModel.MessageContractAttribute(IsWrapped:=false)>  _
-    Partial Friend Class UpdateResponse
+    Partial Public Class UpdateResponse
         
         <System.ServiceModel.MessageBodyMemberAttribute([Namespace]:="http://sap.com/xi/SAPGlobal20/Global", Order:=0)>  _
-        Public IF_BodegaUpdateConfirmation_sync As WSDL_BODEGAS.IF_BodegaUpdateConfirmationMessage_sync
+        Public EX_BodegaExistencia_BodegaUpdateConfirmation_sync As WSDL_BODEGAS.EX_BodegaExistencia_BodegaUpdateConfirmationMessage_sync
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal IF_BodegaUpdateConfirmation_sync As WSDL_BODEGAS.IF_BodegaUpdateConfirmationMessage_sync)
+        Public Sub New(ByVal EX_BodegaExistencia_BodegaUpdateConfirmation_sync As WSDL_BODEGAS.EX_BodegaExistencia_BodegaUpdateConfirmationMessage_sync)
             MyBase.New
-            Me.IF_BodegaUpdateConfirmation_sync = IF_BodegaUpdateConfirmation_sync
+            Me.EX_BodegaExistencia_BodegaUpdateConfirmation_sync = EX_BodegaExistencia_BodegaUpdateConfirmation_sync
         End Sub
     End Class
     
@@ -1645,21 +1679,21 @@ Namespace WSDL_BODEGAS
      System.Diagnostics.DebuggerStepThroughAttribute(),  _
      System.ComponentModel.DesignerCategoryAttribute("code"),  _
      System.Xml.Serialization.XmlTypeAttribute([Namespace]:="http://0014438665-one-off.sap.com/Y640YVQUY_")>  _
-    Partial Public Class IF_BodegaReadByIDQueryMessage_sync
+    Partial Public Class EX_BodegaExistencia_BodegaReadByIDQueryMessage_sync
         Inherits Object
         Implements System.ComponentModel.INotifyPropertyChanged
         
-        Private iF_BodegaField As IF_BodegaReadByIDQuery
+        Private eX_BodegaField As EX_BodegaExistencia_BodegaReadByIDQuery
         
         '''<comentarios/>
         <System.Xml.Serialization.XmlElementAttribute(Form:=System.Xml.Schema.XmlSchemaForm.Unqualified, Order:=0)>  _
-        Public Property IF_Bodega() As IF_BodegaReadByIDQuery
+        Public Property EX_Bodega() As EX_BodegaExistencia_BodegaReadByIDQuery
             Get
-                Return Me.iF_BodegaField
+                Return Me.eX_BodegaField
             End Get
             Set
-                Me.iF_BodegaField = value
-                Me.RaisePropertyChanged("IF_Bodega")
+                Me.eX_BodegaField = value
+                Me.RaisePropertyChanged("EX_Bodega")
             End Set
         End Property
         
@@ -1679,13 +1713,13 @@ Namespace WSDL_BODEGAS
      System.Diagnostics.DebuggerStepThroughAttribute(),  _
      System.ComponentModel.DesignerCategoryAttribute("code"),  _
      System.Xml.Serialization.XmlTypeAttribute([Namespace]:="http://0014438665-one-off.sap.com/Y640YVQUY_")>  _
-    Partial Public Class IF_BodegaReadByIDQuery
+    Partial Public Class EX_BodegaExistencia_BodegaReadByIDQuery
         Inherits Object
         Implements System.ComponentModel.INotifyPropertyChanged
         
         Private sAP_UUIDField As String
         
-        Private codAlmacenField As String
+        Private idField As String
         
         '''<comentarios/>
         <System.Xml.Serialization.XmlElementAttribute(Form:=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType:="token", Order:=0)>  _
@@ -1701,13 +1735,13 @@ Namespace WSDL_BODEGAS
         
         '''<comentarios/>
         <System.Xml.Serialization.XmlElementAttribute(Form:=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType:="token", Order:=1)>  _
-        Public Property CodAlmacen() As String
+        Public Property Id() As String
             Get
-                Return Me.codAlmacenField
+                Return Me.idField
             End Get
             Set
-                Me.codAlmacenField = value
-                Me.RaisePropertyChanged("CodAlmacen")
+                Me.idField = value
+                Me.RaisePropertyChanged("Id")
             End Set
         End Property
         
@@ -1727,23 +1761,23 @@ Namespace WSDL_BODEGAS
      System.Diagnostics.DebuggerStepThroughAttribute(),  _
      System.ComponentModel.DesignerCategoryAttribute("code"),  _
      System.Xml.Serialization.XmlTypeAttribute([Namespace]:="http://0014438665-one-off.sap.com/Y640YVQUY_")>  _
-    Partial Public Class IF_BodegaReadByIDResponseMessage_sync
+    Partial Public Class EX_BodegaExistencia_BodegaReadByIDResponseMessage_sync
         Inherits Object
         Implements System.ComponentModel.INotifyPropertyChanged
         
-        Private iF_BodegaField As IF_BodegaReadByIDResponse
+        Private eX_BodegaField As EX_BodegaExistencia_BodegaReadByIDResponse
         
         Private logField As Log
         
         '''<comentarios/>
         <System.Xml.Serialization.XmlElementAttribute(Form:=System.Xml.Schema.XmlSchemaForm.Unqualified, Order:=0)>  _
-        Public Property IF_Bodega() As IF_BodegaReadByIDResponse
+        Public Property EX_Bodega() As EX_BodegaExistencia_BodegaReadByIDResponse
             Get
-                Return Me.iF_BodegaField
+                Return Me.eX_BodegaField
             End Get
             Set
-                Me.iF_BodegaField = value
-                Me.RaisePropertyChanged("IF_Bodega")
+                Me.eX_BodegaField = value
+                Me.RaisePropertyChanged("EX_Bodega")
             End Set
         End Property
         
@@ -1775,13 +1809,15 @@ Namespace WSDL_BODEGAS
      System.Diagnostics.DebuggerStepThroughAttribute(),  _
      System.ComponentModel.DesignerCategoryAttribute("code"),  _
      System.Xml.Serialization.XmlTypeAttribute([Namespace]:="http://0014438665-one-off.sap.com/Y640YVQUY_")>  _
-    Partial Public Class IF_BodegaReadByIDResponse
+    Partial Public Class EX_BodegaExistencia_BodegaReadByIDResponse
         Inherits Object
         Implements System.ComponentModel.INotifyPropertyChanged
         
         Private sAP_UUIDField As String
         
-        Private codAlmacenField As String
+        Private idField As String
+        
+        Private codAlmacenField As Text
         
         Private nalmacenField As Text
         
@@ -1805,7 +1841,19 @@ Namespace WSDL_BODEGAS
         
         '''<comentarios/>
         <System.Xml.Serialization.XmlElementAttribute(Form:=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType:="token", Order:=1)>  _
-        Public Property CodAlmacen() As String
+        Public Property Id() As String
+            Get
+                Return Me.idField
+            End Get
+            Set
+                Me.idField = value
+                Me.RaisePropertyChanged("Id")
+            End Set
+        End Property
+        
+        '''<comentarios/>
+        <System.Xml.Serialization.XmlElementAttribute(Form:=System.Xml.Schema.XmlSchemaForm.Unqualified, Order:=2)>  _
+        Public Property CodAlmacen() As Text
             Get
                 Return Me.codAlmacenField
             End Get
@@ -1816,7 +1864,7 @@ Namespace WSDL_BODEGAS
         End Property
         
         '''<comentarios/>
-        <System.Xml.Serialization.XmlElementAttribute(Form:=System.Xml.Schema.XmlSchemaForm.Unqualified, Order:=2)>  _
+        <System.Xml.Serialization.XmlElementAttribute(Form:=System.Xml.Schema.XmlSchemaForm.Unqualified, Order:=3)>  _
         Public Property Nalmacen() As Text
             Get
                 Return Me.nalmacenField
@@ -1828,7 +1876,7 @@ Namespace WSDL_BODEGAS
         End Property
         
         '''<comentarios/>
-        <System.Xml.Serialization.XmlElementAttribute(Form:=System.Xml.Schema.XmlSchemaForm.Unqualified, Order:=3)>  _
+        <System.Xml.Serialization.XmlElementAttribute(Form:=System.Xml.Schema.XmlSchemaForm.Unqualified, Order:=4)>  _
         Public Property Citem() As Text
             Get
                 Return Me.citemField
@@ -1840,7 +1888,7 @@ Namespace WSDL_BODEGAS
         End Property
         
         '''<comentarios/>
-        <System.Xml.Serialization.XmlElementAttribute(Form:=System.Xml.Schema.XmlSchemaForm.Unqualified, Order:=4)>  _
+        <System.Xml.Serialization.XmlElementAttribute(Form:=System.Xml.Schema.XmlSchemaForm.Unqualified, Order:=5)>  _
         Public Property Ditem() As Text
             Get
                 Return Me.ditemField
@@ -1852,7 +1900,7 @@ Namespace WSDL_BODEGAS
         End Property
         
         '''<comentarios/>
-        <System.Xml.Serialization.XmlElementAttribute(Form:=System.Xml.Schema.XmlSchemaForm.Unqualified, Order:=5)>  _
+        <System.Xml.Serialization.XmlElementAttribute(Form:=System.Xml.Schema.XmlSchemaForm.Unqualified, Order:=6)>  _
         Public Property CantDisp() As Quantity
             Get
                 Return Me.cantDispField
@@ -1877,18 +1925,18 @@ Namespace WSDL_BODEGAS
      System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0"),  _
      System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced),  _
      System.ServiceModel.MessageContractAttribute(IsWrapped:=false)>  _
-    Partial Friend Class ReadRequest
+    Partial Public Class ReadRequest
         
         <System.ServiceModel.MessageBodyMemberAttribute([Namespace]:="http://sap.com/xi/SAPGlobal20/Global", Order:=0)>  _
-        Public IF_BodegaReadByIDQuery_sync As WSDL_BODEGAS.IF_BodegaReadByIDQueryMessage_sync
+        Public EX_BodegaExistencia_BodegaReadByIDQuery_sync As WSDL_BODEGAS.EX_BodegaExistencia_BodegaReadByIDQueryMessage_sync
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal IF_BodegaReadByIDQuery_sync As WSDL_BODEGAS.IF_BodegaReadByIDQueryMessage_sync)
+        Public Sub New(ByVal EX_BodegaExistencia_BodegaReadByIDQuery_sync As WSDL_BODEGAS.EX_BodegaExistencia_BodegaReadByIDQueryMessage_sync)
             MyBase.New
-            Me.IF_BodegaReadByIDQuery_sync = IF_BodegaReadByIDQuery_sync
+            Me.EX_BodegaExistencia_BodegaReadByIDQuery_sync = EX_BodegaExistencia_BodegaReadByIDQuery_sync
         End Sub
     End Class
     
@@ -1896,31 +1944,31 @@ Namespace WSDL_BODEGAS
      System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0"),  _
      System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced),  _
      System.ServiceModel.MessageContractAttribute(IsWrapped:=false)>  _
-    Partial Friend Class ReadResponse
+    Partial Public Class ReadResponse
         
         <System.ServiceModel.MessageBodyMemberAttribute([Namespace]:="http://sap.com/xi/SAPGlobal20/Global", Order:=0)>  _
-        Public IF_BodegaReadByIDResponse_sync As WSDL_BODEGAS.IF_BodegaReadByIDResponseMessage_sync
+        Public EX_BodegaExistencia_BodegaReadByIDResponse_sync As WSDL_BODEGAS.EX_BodegaExistencia_BodegaReadByIDResponseMessage_sync
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal IF_BodegaReadByIDResponse_sync As WSDL_BODEGAS.IF_BodegaReadByIDResponseMessage_sync)
+        Public Sub New(ByVal EX_BodegaExistencia_BodegaReadByIDResponse_sync As WSDL_BODEGAS.EX_BodegaExistencia_BodegaReadByIDResponseMessage_sync)
             MyBase.New
-            Me.IF_BodegaReadByIDResponse_sync = IF_BodegaReadByIDResponse_sync
+            Me.EX_BodegaExistencia_BodegaReadByIDResponse_sync = EX_BodegaExistencia_BodegaReadByIDResponse_sync
         End Sub
     End Class
     
     <System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")>  _
-    Friend Interface Y640YVQUY_WBodegaChannel
-        Inherits WSDL_BODEGAS.Y640YVQUY_WBodega, System.ServiceModel.IClientChannel
+    Public Interface Y640YVQUY_WSDL_BODEGASChannel
+        Inherits WSDL_BODEGAS.Y640YVQUY_WSDL_BODEGAS, System.ServiceModel.IClientChannel
     End Interface
     
     <System.Diagnostics.DebuggerStepThroughAttribute(),  _
      System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")>  _
-    Partial Friend Class Y640YVQUY_WBodegaClient
-        Inherits System.ServiceModel.ClientBase(Of WSDL_BODEGAS.Y640YVQUY_WBodega)
-        Implements WSDL_BODEGAS.Y640YVQUY_WBodega
+    Partial Public Class Y640YVQUY_WSDL_BODEGASClient
+        Inherits System.ServiceModel.ClientBase(Of WSDL_BODEGAS.Y640YVQUY_WSDL_BODEGAS)
+        Implements WSDL_BODEGAS.Y640YVQUY_WSDL_BODEGAS
         
         Public Sub New()
             MyBase.New
@@ -1943,72 +1991,72 @@ Namespace WSDL_BODEGAS
         End Sub
         
         <System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)>  _
-        Function WSDL_BODEGAS_Y640YVQUY_WBodega_Create(ByVal request As WSDL_BODEGAS.CreateRequest) As WSDL_BODEGAS.CreateResponse Implements WSDL_BODEGAS.Y640YVQUY_WBodega.Create
+        Function WSDL_BODEGAS_Y640YVQUY_WSDL_BODEGAS_Create(ByVal request As WSDL_BODEGAS.CreateRequest) As WSDL_BODEGAS.CreateResponse Implements WSDL_BODEGAS.Y640YVQUY_WSDL_BODEGAS.Create
             Return MyBase.Channel.Create(request)
         End Function
         
-        Public Function Create(ByVal IF_BodegaCreateRequest_sync As WSDL_BODEGAS.IF_BodegaCreateRequestMessage_sync) As WSDL_BODEGAS.IF_BodegaCreateConfirmationMessage_sync
+        Public Function Create(ByVal EX_BodegaExistencia_BodegaCreateRequest_sync As WSDL_BODEGAS.EX_BodegaExistencia_BodegaCreateRequestMessage_sync) As WSDL_BODEGAS.EX_BodegaExistencia_BodegaCreateConfirmationMessage_sync
             Dim inValue As WSDL_BODEGAS.CreateRequest = New WSDL_BODEGAS.CreateRequest()
-            inValue.IF_BodegaCreateRequest_sync = IF_BodegaCreateRequest_sync
-            Dim retVal As WSDL_BODEGAS.CreateResponse = CType(Me,WSDL_BODEGAS.Y640YVQUY_WBodega).Create(inValue)
-            Return retVal.IF_BodegaCreateConfirmation_sync
+            inValue.EX_BodegaExistencia_BodegaCreateRequest_sync = EX_BodegaExistencia_BodegaCreateRequest_sync
+            Dim retVal As WSDL_BODEGAS.CreateResponse = CType(Me,WSDL_BODEGAS.Y640YVQUY_WSDL_BODEGAS).Create(inValue)
+            Return retVal.EX_BodegaExistencia_BodegaCreateConfirmation_sync
         End Function
         
         <System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)>  _
-        Function WSDL_BODEGAS_Y640YVQUY_WBodega_CreateAsync(ByVal request As WSDL_BODEGAS.CreateRequest) As System.Threading.Tasks.Task(Of WSDL_BODEGAS.CreateResponse) Implements WSDL_BODEGAS.Y640YVQUY_WBodega.CreateAsync
+        Function WSDL_BODEGAS_Y640YVQUY_WSDL_BODEGAS_CreateAsync(ByVal request As WSDL_BODEGAS.CreateRequest) As System.Threading.Tasks.Task(Of WSDL_BODEGAS.CreateResponse) Implements WSDL_BODEGAS.Y640YVQUY_WSDL_BODEGAS.CreateAsync
             Return MyBase.Channel.CreateAsync(request)
         End Function
         
-        Public Function CreateAsync(ByVal IF_BodegaCreateRequest_sync As WSDL_BODEGAS.IF_BodegaCreateRequestMessage_sync) As System.Threading.Tasks.Task(Of WSDL_BODEGAS.CreateResponse)
+        Public Function CreateAsync(ByVal EX_BodegaExistencia_BodegaCreateRequest_sync As WSDL_BODEGAS.EX_BodegaExistencia_BodegaCreateRequestMessage_sync) As System.Threading.Tasks.Task(Of WSDL_BODEGAS.CreateResponse)
             Dim inValue As WSDL_BODEGAS.CreateRequest = New WSDL_BODEGAS.CreateRequest()
-            inValue.IF_BodegaCreateRequest_sync = IF_BodegaCreateRequest_sync
-            Return CType(Me,WSDL_BODEGAS.Y640YVQUY_WBodega).CreateAsync(inValue)
+            inValue.EX_BodegaExistencia_BodegaCreateRequest_sync = EX_BodegaExistencia_BodegaCreateRequest_sync
+            Return CType(Me,WSDL_BODEGAS.Y640YVQUY_WSDL_BODEGAS).CreateAsync(inValue)
         End Function
         
         <System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)>  _
-        Function WSDL_BODEGAS_Y640YVQUY_WBodega_Update(ByVal request As WSDL_BODEGAS.UpdateRequest) As WSDL_BODEGAS.UpdateResponse Implements WSDL_BODEGAS.Y640YVQUY_WBodega.Update
+        Function WSDL_BODEGAS_Y640YVQUY_WSDL_BODEGAS_Update(ByVal request As WSDL_BODEGAS.UpdateRequest) As WSDL_BODEGAS.UpdateResponse Implements WSDL_BODEGAS.Y640YVQUY_WSDL_BODEGAS.Update
             Return MyBase.Channel.Update(request)
         End Function
         
-        Public Function Update(ByVal IF_BodegaUpdateRequest_sync As WSDL_BODEGAS.IF_BodegaUpdateRequestMessage_sync) As WSDL_BODEGAS.IF_BodegaUpdateConfirmationMessage_sync
+        Public Function Update(ByVal EX_BodegaExistencia_BodegaUpdateRequest_sync As WSDL_BODEGAS.EX_BodegaExistencia_BodegaUpdateRequestMessage_sync) As WSDL_BODEGAS.EX_BodegaExistencia_BodegaUpdateConfirmationMessage_sync
             Dim inValue As WSDL_BODEGAS.UpdateRequest = New WSDL_BODEGAS.UpdateRequest()
-            inValue.IF_BodegaUpdateRequest_sync = IF_BodegaUpdateRequest_sync
-            Dim retVal As WSDL_BODEGAS.UpdateResponse = CType(Me,WSDL_BODEGAS.Y640YVQUY_WBodega).Update(inValue)
-            Return retVal.IF_BodegaUpdateConfirmation_sync
+            inValue.EX_BodegaExistencia_BodegaUpdateRequest_sync = EX_BodegaExistencia_BodegaUpdateRequest_sync
+            Dim retVal As WSDL_BODEGAS.UpdateResponse = CType(Me,WSDL_BODEGAS.Y640YVQUY_WSDL_BODEGAS).Update(inValue)
+            Return retVal.EX_BodegaExistencia_BodegaUpdateConfirmation_sync
         End Function
         
         <System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)>  _
-        Function WSDL_BODEGAS_Y640YVQUY_WBodega_UpdateAsync(ByVal request As WSDL_BODEGAS.UpdateRequest) As System.Threading.Tasks.Task(Of WSDL_BODEGAS.UpdateResponse) Implements WSDL_BODEGAS.Y640YVQUY_WBodega.UpdateAsync
+        Function WSDL_BODEGAS_Y640YVQUY_WSDL_BODEGAS_UpdateAsync(ByVal request As WSDL_BODEGAS.UpdateRequest) As System.Threading.Tasks.Task(Of WSDL_BODEGAS.UpdateResponse) Implements WSDL_BODEGAS.Y640YVQUY_WSDL_BODEGAS.UpdateAsync
             Return MyBase.Channel.UpdateAsync(request)
         End Function
         
-        Public Function UpdateAsync(ByVal IF_BodegaUpdateRequest_sync As WSDL_BODEGAS.IF_BodegaUpdateRequestMessage_sync) As System.Threading.Tasks.Task(Of WSDL_BODEGAS.UpdateResponse)
+        Public Function UpdateAsync(ByVal EX_BodegaExistencia_BodegaUpdateRequest_sync As WSDL_BODEGAS.EX_BodegaExistencia_BodegaUpdateRequestMessage_sync) As System.Threading.Tasks.Task(Of WSDL_BODEGAS.UpdateResponse)
             Dim inValue As WSDL_BODEGAS.UpdateRequest = New WSDL_BODEGAS.UpdateRequest()
-            inValue.IF_BodegaUpdateRequest_sync = IF_BodegaUpdateRequest_sync
-            Return CType(Me,WSDL_BODEGAS.Y640YVQUY_WBodega).UpdateAsync(inValue)
+            inValue.EX_BodegaExistencia_BodegaUpdateRequest_sync = EX_BodegaExistencia_BodegaUpdateRequest_sync
+            Return CType(Me,WSDL_BODEGAS.Y640YVQUY_WSDL_BODEGAS).UpdateAsync(inValue)
         End Function
         
         <System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)>  _
-        Function WSDL_BODEGAS_Y640YVQUY_WBodega_Read(ByVal request As WSDL_BODEGAS.ReadRequest) As WSDL_BODEGAS.ReadResponse Implements WSDL_BODEGAS.Y640YVQUY_WBodega.Read
+        Function WSDL_BODEGAS_Y640YVQUY_WSDL_BODEGAS_Read(ByVal request As WSDL_BODEGAS.ReadRequest) As WSDL_BODEGAS.ReadResponse Implements WSDL_BODEGAS.Y640YVQUY_WSDL_BODEGAS.Read
             Return MyBase.Channel.Read(request)
         End Function
         
-        Public Function Read(ByVal IF_BodegaReadByIDQuery_sync As WSDL_BODEGAS.IF_BodegaReadByIDQueryMessage_sync) As WSDL_BODEGAS.IF_BodegaReadByIDResponseMessage_sync
+        Public Function Read(ByVal EX_BodegaExistencia_BodegaReadByIDQuery_sync As WSDL_BODEGAS.EX_BodegaExistencia_BodegaReadByIDQueryMessage_sync) As WSDL_BODEGAS.EX_BodegaExistencia_BodegaReadByIDResponseMessage_sync
             Dim inValue As WSDL_BODEGAS.ReadRequest = New WSDL_BODEGAS.ReadRequest()
-            inValue.IF_BodegaReadByIDQuery_sync = IF_BodegaReadByIDQuery_sync
-            Dim retVal As WSDL_BODEGAS.ReadResponse = CType(Me,WSDL_BODEGAS.Y640YVQUY_WBodega).Read(inValue)
-            Return retVal.IF_BodegaReadByIDResponse_sync
+            inValue.EX_BodegaExistencia_BodegaReadByIDQuery_sync = EX_BodegaExistencia_BodegaReadByIDQuery_sync
+            Dim retVal As WSDL_BODEGAS.ReadResponse = CType(Me,WSDL_BODEGAS.Y640YVQUY_WSDL_BODEGAS).Read(inValue)
+            Return retVal.EX_BodegaExistencia_BodegaReadByIDResponse_sync
         End Function
         
         <System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)>  _
-        Function WSDL_BODEGAS_Y640YVQUY_WBodega_ReadAsync(ByVal request As WSDL_BODEGAS.ReadRequest) As System.Threading.Tasks.Task(Of WSDL_BODEGAS.ReadResponse) Implements WSDL_BODEGAS.Y640YVQUY_WBodega.ReadAsync
+        Function WSDL_BODEGAS_Y640YVQUY_WSDL_BODEGAS_ReadAsync(ByVal request As WSDL_BODEGAS.ReadRequest) As System.Threading.Tasks.Task(Of WSDL_BODEGAS.ReadResponse) Implements WSDL_BODEGAS.Y640YVQUY_WSDL_BODEGAS.ReadAsync
             Return MyBase.Channel.ReadAsync(request)
         End Function
         
-        Public Function ReadAsync(ByVal IF_BodegaReadByIDQuery_sync As WSDL_BODEGAS.IF_BodegaReadByIDQueryMessage_sync) As System.Threading.Tasks.Task(Of WSDL_BODEGAS.ReadResponse)
+        Public Function ReadAsync(ByVal EX_BodegaExistencia_BodegaReadByIDQuery_sync As WSDL_BODEGAS.EX_BodegaExistencia_BodegaReadByIDQueryMessage_sync) As System.Threading.Tasks.Task(Of WSDL_BODEGAS.ReadResponse)
             Dim inValue As WSDL_BODEGAS.ReadRequest = New WSDL_BODEGAS.ReadRequest()
-            inValue.IF_BodegaReadByIDQuery_sync = IF_BodegaReadByIDQuery_sync
-            Return CType(Me,WSDL_BODEGAS.Y640YVQUY_WBodega).ReadAsync(inValue)
+            inValue.EX_BodegaExistencia_BodegaReadByIDQuery_sync = EX_BodegaExistencia_BodegaReadByIDQuery_sync
+            Return CType(Me,WSDL_BODEGAS.Y640YVQUY_WSDL_BODEGAS).ReadAsync(inValue)
         End Function
     End Class
 End Namespace

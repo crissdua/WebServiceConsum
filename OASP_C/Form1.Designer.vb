@@ -22,6 +22,8 @@ Partial Class Form1
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.Button1 = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
@@ -40,12 +42,14 @@ Partial Class Form1
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.Label7 = New System.Windows.Forms.Label()
         Me.Cod_Almacen = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.item = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.descr = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.hand = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Nom_Almacen = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -223,19 +227,6 @@ Partial Class Form1
         Me.DataGridView1.Size = New System.Drawing.Size(593, 194)
         Me.DataGridView1.TabIndex = 15
         '
-        'Label7
-        '
-        Me.Label7.BackColor = System.Drawing.SystemColors.ActiveBorder
-        Me.Label7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label7.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(0, 0)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(14, 235)
-        Me.Label7.TabIndex = 14
-        Me.Label7.Text = "Integration Framework"
-        Me.Label7.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
         'Cod_Almacen
         '
         Me.Cod_Almacen.HeaderText = "Cod Almacen"
@@ -260,6 +251,30 @@ Partial Class Form1
         '
         Me.Nom_Almacen.HeaderText = "Existencia"
         Me.Nom_Almacen.Name = "Nom_Almacen"
+        '
+        'Label7
+        '
+        Me.Label7.BackColor = System.Drawing.SystemColors.ActiveBorder
+        Me.Label7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Label7.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(0, 0)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(14, 235)
+        Me.Label7.TabIndex = 14
+        Me.Label7.Text = "Integration Framework"
+        Me.Label7.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'NotifyIcon1
+        '
+        Me.NotifyIcon1.Icon = CType(resources.GetObject("NotifyIcon1.Icon"), System.Drawing.Icon)
+        Me.NotifyIcon1.Text = "C4C+B1if (Actualizar)"
+        Me.NotifyIcon1.Visible = True
+        '
+        'Timer1
+        '
+        Me.Timer1.Enabled = True
+        Me.Timer1.Interval = 5000
         '
         'Form1
         '
@@ -302,4 +317,6 @@ Partial Class Form1
     Friend WithEvents descr As DataGridViewTextBoxColumn
     Friend WithEvents hand As DataGridViewTextBoxColumn
     Friend WithEvents Nom_Almacen As DataGridViewTextBoxColumn
+    Friend WithEvents NotifyIcon1 As NotifyIcon
+    Friend WithEvents Timer1 As Timer
 End Class

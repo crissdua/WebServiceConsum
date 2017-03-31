@@ -226,22 +226,22 @@ OASP_C
 <member name="P:OASP_C.WSDL_BODEGAS.LogItemNotePlaceholderSubstitutionList.FourthPlaceholderSubstitutionText">
 <comentarios/>
 </member>
-<member name="T:OASP_C.WSDL_BODEGAS.IF_BodegaCreateConfirmation">
+<member name="T:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaCreateConfirmation">
 <comentarios/>
 </member>
-<member name="P:OASP_C.WSDL_BODEGAS.IF_BodegaCreateConfirmation.SAP_UUID">
+<member name="P:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaCreateConfirmation.SAP_UUID">
 <comentarios/>
 </member>
-<member name="P:OASP_C.WSDL_BODEGAS.IF_BodegaCreateConfirmation.CodAlmacen">
+<member name="P:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaCreateConfirmation.Id">
 <comentarios/>
 </member>
-<member name="T:OASP_C.WSDL_BODEGAS.IF_BodegaCreateConfirmationMessage_sync">
+<member name="T:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaCreateConfirmationMessage_sync">
 <comentarios/>
 </member>
-<member name="P:OASP_C.WSDL_BODEGAS.IF_BodegaCreateConfirmationMessage_sync.IF_Bodega">
+<member name="P:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaCreateConfirmationMessage_sync.EX_Bodega">
 <comentarios/>
 </member>
-<member name="P:OASP_C.WSDL_BODEGAS.IF_BodegaCreateConfirmationMessage_sync.Log">
+<member name="P:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaCreateConfirmationMessage_sync.Log">
 <comentarios/>
 </member>
 <member name="T:OASP_C.WSDL_BODEGAS.Quantity">
@@ -262,22 +262,25 @@ OASP_C
 <member name="P:OASP_C.WSDL_BODEGAS.Text.Value">
 <comentarios/>
 </member>
-<member name="T:OASP_C.WSDL_BODEGAS.IF_BodegaCreateRequest">
+<member name="T:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaCreateRequest">
 <comentarios/>
 </member>
-<member name="P:OASP_C.WSDL_BODEGAS.IF_BodegaCreateRequest.CodAlmacen">
+<member name="P:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaCreateRequest.Id">
 <comentarios/>
 </member>
-<member name="P:OASP_C.WSDL_BODEGAS.IF_BodegaCreateRequest.Nalmacen">
+<member name="P:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaCreateRequest.CodAlmacen">
 <comentarios/>
 </member>
-<member name="P:OASP_C.WSDL_BODEGAS.IF_BodegaCreateRequest.Citem">
+<member name="P:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaCreateRequest.Nalmacen">
 <comentarios/>
 </member>
-<member name="P:OASP_C.WSDL_BODEGAS.IF_BodegaCreateRequest.Ditem">
+<member name="P:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaCreateRequest.Citem">
 <comentarios/>
 </member>
-<member name="P:OASP_C.WSDL_BODEGAS.IF_BodegaCreateRequest.CantDisp">
+<member name="P:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaCreateRequest.Ditem">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaCreateRequest.CantDisp">
 <comentarios/>
 </member>
 <member name="T:OASP_C.WSDL_BODEGAS.UUID">
@@ -325,94 +328,100 @@ OASP_C
 <member name="P:OASP_C.WSDL_BODEGAS.BusinessDocumentBasicMessageHeader.ReferenceUUID">
 <comentarios/>
 </member>
-<member name="T:OASP_C.WSDL_BODEGAS.IF_BodegaCreateRequestMessage_sync">
+<member name="T:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaCreateRequestMessage_sync">
 <comentarios/>
 </member>
-<member name="P:OASP_C.WSDL_BODEGAS.IF_BodegaCreateRequestMessage_sync.BasicMessageHeader">
+<member name="P:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaCreateRequestMessage_sync.BasicMessageHeader">
 <comentarios/>
 </member>
-<member name="P:OASP_C.WSDL_BODEGAS.IF_BodegaCreateRequestMessage_sync.IF_Bodega">
+<member name="P:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaCreateRequestMessage_sync.EX_Bodega">
 <comentarios/>
 </member>
-<member name="T:OASP_C.WSDL_BODEGAS.IF_BodegaUpdateRequestMessage_sync">
+<member name="T:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaUpdateRequestMessage_sync">
 <comentarios/>
 </member>
-<member name="P:OASP_C.WSDL_BODEGAS.IF_BodegaUpdateRequestMessage_sync.BasicMessageHeader">
+<member name="P:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaUpdateRequestMessage_sync.BasicMessageHeader">
 <comentarios/>
 </member>
-<member name="P:OASP_C.WSDL_BODEGAS.IF_BodegaUpdateRequestMessage_sync.IF_Bodega">
+<member name="P:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaUpdateRequestMessage_sync.EX_Bodega">
 <comentarios/>
 </member>
-<member name="T:OASP_C.WSDL_BODEGAS.IF_BodegaUpdateRequest">
+<member name="T:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaUpdateRequest">
 <comentarios/>
 </member>
-<member name="P:OASP_C.WSDL_BODEGAS.IF_BodegaUpdateRequest.SAP_UUID">
+<member name="P:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaUpdateRequest.SAP_UUID">
 <comentarios/>
 </member>
-<member name="P:OASP_C.WSDL_BODEGAS.IF_BodegaUpdateRequest.CodAlmacen">
+<member name="P:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaUpdateRequest.Id">
 <comentarios/>
 </member>
-<member name="P:OASP_C.WSDL_BODEGAS.IF_BodegaUpdateRequest.Nalmacen">
+<member name="P:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaUpdateRequest.CodAlmacen">
 <comentarios/>
 </member>
-<member name="P:OASP_C.WSDL_BODEGAS.IF_BodegaUpdateRequest.Citem">
+<member name="P:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaUpdateRequest.Nalmacen">
 <comentarios/>
 </member>
-<member name="P:OASP_C.WSDL_BODEGAS.IF_BodegaUpdateRequest.Ditem">
+<member name="P:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaUpdateRequest.Citem">
 <comentarios/>
 </member>
-<member name="P:OASP_C.WSDL_BODEGAS.IF_BodegaUpdateRequest.CantDisp">
+<member name="P:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaUpdateRequest.Ditem">
 <comentarios/>
 </member>
-<member name="T:OASP_C.WSDL_BODEGAS.IF_BodegaUpdateConfirmationMessage_sync">
+<member name="P:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaUpdateRequest.CantDisp">
 <comentarios/>
 </member>
-<member name="P:OASP_C.WSDL_BODEGAS.IF_BodegaUpdateConfirmationMessage_sync.Log">
+<member name="T:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaUpdateConfirmationMessage_sync">
 <comentarios/>
 </member>
-<member name="T:OASP_C.WSDL_BODEGAS.IF_BodegaReadByIDQueryMessage_sync">
+<member name="P:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaUpdateConfirmationMessage_sync.Log">
 <comentarios/>
 </member>
-<member name="P:OASP_C.WSDL_BODEGAS.IF_BodegaReadByIDQueryMessage_sync.IF_Bodega">
+<member name="T:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaReadByIDQueryMessage_sync">
 <comentarios/>
 </member>
-<member name="T:OASP_C.WSDL_BODEGAS.IF_BodegaReadByIDQuery">
+<member name="P:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaReadByIDQueryMessage_sync.EX_Bodega">
 <comentarios/>
 </member>
-<member name="P:OASP_C.WSDL_BODEGAS.IF_BodegaReadByIDQuery.SAP_UUID">
+<member name="T:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaReadByIDQuery">
 <comentarios/>
 </member>
-<member name="P:OASP_C.WSDL_BODEGAS.IF_BodegaReadByIDQuery.CodAlmacen">
+<member name="P:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaReadByIDQuery.SAP_UUID">
 <comentarios/>
 </member>
-<member name="T:OASP_C.WSDL_BODEGAS.IF_BodegaReadByIDResponseMessage_sync">
+<member name="P:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaReadByIDQuery.Id">
 <comentarios/>
 </member>
-<member name="P:OASP_C.WSDL_BODEGAS.IF_BodegaReadByIDResponseMessage_sync.IF_Bodega">
+<member name="T:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaReadByIDResponseMessage_sync">
 <comentarios/>
 </member>
-<member name="P:OASP_C.WSDL_BODEGAS.IF_BodegaReadByIDResponseMessage_sync.Log">
+<member name="P:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaReadByIDResponseMessage_sync.EX_Bodega">
 <comentarios/>
 </member>
-<member name="T:OASP_C.WSDL_BODEGAS.IF_BodegaReadByIDResponse">
+<member name="P:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaReadByIDResponseMessage_sync.Log">
 <comentarios/>
 </member>
-<member name="P:OASP_C.WSDL_BODEGAS.IF_BodegaReadByIDResponse.SAP_UUID">
+<member name="T:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaReadByIDResponse">
 <comentarios/>
 </member>
-<member name="P:OASP_C.WSDL_BODEGAS.IF_BodegaReadByIDResponse.CodAlmacen">
+<member name="P:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaReadByIDResponse.SAP_UUID">
 <comentarios/>
 </member>
-<member name="P:OASP_C.WSDL_BODEGAS.IF_BodegaReadByIDResponse.Nalmacen">
+<member name="P:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaReadByIDResponse.Id">
 <comentarios/>
 </member>
-<member name="P:OASP_C.WSDL_BODEGAS.IF_BodegaReadByIDResponse.Citem">
+<member name="P:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaReadByIDResponse.CodAlmacen">
 <comentarios/>
 </member>
-<member name="P:OASP_C.WSDL_BODEGAS.IF_BodegaReadByIDResponse.Ditem">
+<member name="P:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaReadByIDResponse.Nalmacen">
 <comentarios/>
 </member>
-<member name="P:OASP_C.WSDL_BODEGAS.IF_BodegaReadByIDResponse.CantDisp">
+<member name="P:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaReadByIDResponse.Citem">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaReadByIDResponse.Ditem">
+<comentarios/>
+</member>
+<member name="P:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaReadByIDResponse.CantDisp">
 <comentarios/>
 </member>
 <member name="T:OASP_C.W.GetBodegaType">
