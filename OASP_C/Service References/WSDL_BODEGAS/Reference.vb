@@ -799,7 +799,7 @@ Namespace WSDL_BODEGAS
         
         Private sAP_UUIDField As String
         
-        Private idField As String
+        Private entryField As String
         
         '''<comentarios/>
         <System.Xml.Serialization.XmlElementAttribute(Form:=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType:="token", Order:=0)>  _
@@ -815,13 +815,13 @@ Namespace WSDL_BODEGAS
         
         '''<comentarios/>
         <System.Xml.Serialization.XmlElementAttribute(Form:=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType:="token", Order:=1)>  _
-        Public Property Id() As String
+        Public Property Entry() As String
             Get
-                Return Me.idField
+                Return Me.entryField
             End Get
             Set
-                Me.idField = value
-                Me.RaisePropertyChanged("Id")
+                Me.entryField = value
+                Me.RaisePropertyChanged("Entry")
             End Set
         End Property
         
@@ -989,7 +989,7 @@ Namespace WSDL_BODEGAS
         Inherits Object
         Implements System.ComponentModel.INotifyPropertyChanged
         
-        Private idField As String
+        Private entryField As String
         
         Private codAlmacenField As Text
         
@@ -1003,13 +1003,13 @@ Namespace WSDL_BODEGAS
         
         '''<comentarios/>
         <System.Xml.Serialization.XmlElementAttribute(Form:=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType:="token", Order:=0)>  _
-        Public Property Id() As String
+        Public Property Entry() As String
             Get
-                Return Me.idField
+                Return Me.entryField
             End Get
             Set
-                Me.idField = value
-                Me.RaisePropertyChanged("Id")
+                Me.entryField = value
+                Me.RaisePropertyChanged("Entry")
             End Set
         End Property
         
@@ -1495,7 +1495,7 @@ Namespace WSDL_BODEGAS
         
         Private sAP_UUIDField As String
         
-        Private idField As String
+        Private entryField As String
         
         Private codAlmacenField As Text
         
@@ -1521,13 +1521,13 @@ Namespace WSDL_BODEGAS
         
         '''<comentarios/>
         <System.Xml.Serialization.XmlElementAttribute(Form:=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType:="token", Order:=1)>  _
-        Public Property Id() As String
+        Public Property Entry() As String
             Get
-                Return Me.idField
+                Return Me.entryField
             End Get
             Set
-                Me.idField = value
-                Me.RaisePropertyChanged("Id")
+                Me.entryField = value
+                Me.RaisePropertyChanged("Entry")
             End Set
         End Property
         
@@ -1719,7 +1719,7 @@ Namespace WSDL_BODEGAS
         
         Private sAP_UUIDField As String
         
-        Private idField As String
+        Private entryField As String
         
         '''<comentarios/>
         <System.Xml.Serialization.XmlElementAttribute(Form:=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType:="token", Order:=0)>  _
@@ -1735,13 +1735,13 @@ Namespace WSDL_BODEGAS
         
         '''<comentarios/>
         <System.Xml.Serialization.XmlElementAttribute(Form:=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType:="token", Order:=1)>  _
-        Public Property Id() As String
+        Public Property Entry() As String
             Get
-                Return Me.idField
+                Return Me.entryField
             End Get
             Set
-                Me.idField = value
-                Me.RaisePropertyChanged("Id")
+                Me.entryField = value
+                Me.RaisePropertyChanged("Entry")
             End Set
         End Property
         
@@ -1815,7 +1815,7 @@ Namespace WSDL_BODEGAS
         
         Private sAP_UUIDField As String
         
-        Private idField As String
+        Private entryField As String
         
         Private codAlmacenField As Text
         
@@ -1841,13 +1841,13 @@ Namespace WSDL_BODEGAS
         
         '''<comentarios/>
         <System.Xml.Serialization.XmlElementAttribute(Form:=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType:="token", Order:=1)>  _
-        Public Property Id() As String
+        Public Property Entry() As String
             Get
-                Return Me.idField
+                Return Me.entryField
             End Get
             Set
-                Me.idField = value
-                Me.RaisePropertyChanged("Id")
+                Me.entryField = value
+                Me.RaisePropertyChanged("Entry")
             End Set
         End Property
         

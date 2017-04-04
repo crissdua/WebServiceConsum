@@ -232,7 +232,7 @@ OASP_C
 <member name="P:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaCreateConfirmation.SAP_UUID">
 <comentarios/>
 </member>
-<member name="P:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaCreateConfirmation.Id">
+<member name="P:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaCreateConfirmation.Entry">
 <comentarios/>
 </member>
 <member name="T:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaCreateConfirmationMessage_sync">
@@ -265,7 +265,7 @@ OASP_C
 <member name="T:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaCreateRequest">
 <comentarios/>
 </member>
-<member name="P:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaCreateRequest.Id">
+<member name="P:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaCreateRequest.Entry">
 <comentarios/>
 </member>
 <member name="P:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaCreateRequest.CodAlmacen">
@@ -352,7 +352,7 @@ OASP_C
 <member name="P:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaUpdateRequest.SAP_UUID">
 <comentarios/>
 </member>
-<member name="P:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaUpdateRequest.Id">
+<member name="P:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaUpdateRequest.Entry">
 <comentarios/>
 </member>
 <member name="P:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaUpdateRequest.CodAlmacen">
@@ -388,7 +388,7 @@ OASP_C
 <member name="P:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaReadByIDQuery.SAP_UUID">
 <comentarios/>
 </member>
-<member name="P:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaReadByIDQuery.Id">
+<member name="P:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaReadByIDQuery.Entry">
 <comentarios/>
 </member>
 <member name="T:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaReadByIDResponseMessage_sync">
@@ -406,7 +406,7 @@ OASP_C
 <member name="P:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaReadByIDResponse.SAP_UUID">
 <comentarios/>
 </member>
-<member name="P:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaReadByIDResponse.Id">
+<member name="P:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaReadByIDResponse.Entry">
 <comentarios/>
 </member>
 <member name="P:OASP_C.WSDL_BODEGAS.EX_BodegaExistencia_BodegaReadByIDResponse.CodAlmacen">
